@@ -4,10 +4,13 @@ I.) Wi-Fi hardening definition:
 Process of strengthening the security of a wireless network so that it’s harder for attackers to break in, spy on traffic, or exploit weaknesses
 
 II.) Why securing Wi-Fi is critical (home users, small businesses, enterprises).
+
 a.)Home users
 Protect personal data because a insecure network resks identity theft or data leaks because Wifi modem is the gateway to personal data. Prevent piggybacking which can slow internet or another individual committing illegal activites. SafeGuading Iot devices from explotation.
+
 b.)Small business
 Securing Wi-Fi is critical because a breach can erode customer trust by compromising guest devices or internal systems, disrupt business operations by exposing POS systems, servers, or cloud services to data theft or ransomware, and lead to regulatory penalties in industries like healthcare or finance if sensitive customer data is exposed.
+
 c.)Enterprise
 In enterprises, Wi-Fi security is vital because the large attack surface of hundreds or thousands of connected devices means one weak link can enable attackers to steal trade secrets or sensitive data, while a compromise could disrupt operations, cause downtime, and cost millions.
 
