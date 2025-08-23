@@ -63,11 +63,27 @@ a.)Older Wi-Fi security protocols like WEP and WPA (pre-WPA2) are highly insecur
 
 **4. SSID (Network Name) Best Practices**
 
-Change default SSID (don’t broadcast “Linksys,” “Netgear”).
+I.)Change the Default SSID
 
-Avoid personal info in SSID.
+a.)Most routers come with a manufacturer default SSID such as “Linksys,” “Netgear,” or “TP-Link.”
 
-Optionally disable SSID broadcast (pros & cons).
+b.)Keeping the default makes it easier for attackers to identify the router brand/model and exploit known vulnerabilities.
+
+c.)Always change the SSID to something unique and non-identifiable to avoid being an easy target.
+
+II.)Avoid Personal Information in SSID
+
+a.)Do not include names, addresses, phone numbers, or other identifiers (e.g., “SmithFamilyWiFi” or “123MainStreetWiFi”).
+
+b.)Attackers can use this info for social engineering, targeted attacks, or even physical location tracking.
+
+c.)A generic name (e.g., “HomeNetwork5G” or “BlueSkyNet”) is safer.
+
+III.)Optionally Disable SSID Broadcast
+
+a.)Routers normally “broadcast” the SSID so nearby devices can detect and connect easily.
+
+b.)Disabling SSID broadcast means devices must know the network name in advance to connect.
 
 **5. Password & Key Management**
 
