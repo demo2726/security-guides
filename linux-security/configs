@@ -1,1 +1,60 @@
 
+
+### Linux Security Configurations
+
+1. **System Updates**
+
+   * Keep OS and packages up-to-date with security patches (`apt update && apt upgrade`).
+
+2. **SSH Configurations**
+
+   * Change default port (avoid 22).
+   * Disable root login (`PermitRootLogin no`).
+   * Use key-based authentication instead of passwords.
+   * Set idle timeouts (`ClientAliveInterval`, `ClientAliveCountMax`).
+
+3. **Password & Authentication Policies**
+
+   * Enforce password complexity (PAM, `/etc/security/pwquality.conf`).
+   * Enable account lockout after failed logins.
+   * Limit login attempts (`faillock` or `pam_tally2`).
+
+4. **User & Group Management**
+
+   * Principle of least privilege – minimal rights.
+   * Regularly audit `/etc/passwd` and `/etc/sudoers`.
+   * Disable/lock unused accounts.
+
+5. **File & Directory Permissions**
+
+   * Use `chmod`, `chown`, `umask` to enforce least-privilege access.
+   * Protect sensitive files like `/etc/shadow`, `/etc/passwd`.
+   * Audit with `find / -perm -4000` for SUID binaries.
+
+6. **Firewall & Network Configs**
+
+   * Configure UFW/iptables with default-deny policies.
+   * Disable unused network services (systemctl, chkconfig).
+   * Restrict listening ports (`netstat`, `ss`).
+
+7. **Logging & Monitoring**
+
+   * Centralize logs with syslog/journald.
+   * Monitor with `auditd`, `logwatch`, or SIEM tools.
+   * Enable log rotation (`logrotate`).
+
+8. **Kernel & System Hardening**
+
+   * Configure `/etc/sysctl.conf` for secure networking (disable IP forwarding, ICMP redirects).
+   * Enable ASLR (`kernel.randomize_va_space`).
+   * Disable unused kernel modules.
+
+9. **Service & Daemon Security**
+
+   * Run services with dedicated low-privilege accounts.
+   * Use `systemctl` to restrict with `ProtectSystem`, `NoNewPrivileges`, etc.
+
+10. **Backups & Recovery**
+
+    * Maintain secure, tested backups.
+    * Store offsite/remote and encrypt sensitive data.
