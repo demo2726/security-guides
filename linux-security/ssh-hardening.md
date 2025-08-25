@@ -1,4 +1,4 @@
-### 🔑 SSH Hardening Key Points
+### Hardening Key Points
 
 1. **Disable Root Login**
 
