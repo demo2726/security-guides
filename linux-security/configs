@@ -8,10 +8,29 @@
 
 2. **SSH Configurations**
 
-   * Change default port (avoid 22).
-   * Disable root login (`PermitRootLogin no`).
+   I.) Change default port (avoid 22).
+    Why:
+    a.)Port 22 is a common target fir brute-force logins
+    b.)less avaliable to automated threats
+    c.)less failed login attempts
+    d.)better compatibility with intrusion detection
+   II.) Disable root login (`PermitRootLogin no`).
+   Why:
+    a.)Limit attack surface
+    b.)Encourage least privileges by forcing users to escalate privieges only when necessary
+    c.)Improve auditability because when using sudo acess it provides clear logs of user activity
+    d.)Lower risk of misconfiguration using sudo cause of added layer of safey and intenitionality
    * Use key-based authentication instead of passwords.
-   * Set idle timeouts (`ClientAliveInterval`, `ClientAliveCountMax`).
+    Why:
+    a.)SSH keys are 2048 to 4096 bits long and extremely complex and cryptographic
+    b.)Password can be intercepted, reused or leaked because private kes are asymmetric encryption
+    c.)Use Passwordless Login
+    d.)Granular access control like assigning different public keys to different users of systems 
+    III.) Set idle timeouts using (`ClientAliveInterval`, `ClientAliveCountMax`).
+    a.) prevent abandoned sessions from staying open after a set amount of time
+    b.)open sessions even if idle can be hijacked 
+    c.)encourages users to log out when done and tighter contro; over who is connected and the time they are connected
+    d.)prevent session lingering 
 
 3. **Password & Authentication Policies**
 
