@@ -59,6 +59,6 @@ Phishing is one of the most common and effective attack vectors used by cybercri
 - [NIST SP 800-114 Rev. 1 – User’s Guide to Telework and BYOD Security](https://csrc.nist.gov/pubs/sp/800/114/r1/final)
 - [OWASP – Phishing Overview](https://owasp.org/www-community/attacks/Phishing)
 - [FBI IC3 – Business Email Compromise](https://www.ic3.gov/Media/Y2023/PSA230207)
-
+- [Phishing attacks survey: Types, vectors, and technical approaches](https://www.mdpi.com/1999-5903/12/10/168)
 ---
 
